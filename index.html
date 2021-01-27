@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Hello</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+
+    <div id="root">
+      <h1>{{title}}: {{name}} {{surname}}</h1>
+      <input v-model="name">
+      <br>
+      <input v-model="surname">
+      <br>
+      <div class="img">
+        <img :src="image" alt="standard image">
+      </div>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
