@@ -1,0 +1,43 @@
+:root {
+    --size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--size);
+}
+
+body {
+    background: #1e1e1e;
+    color: #e1e1e1;
+}
+
+#app {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 var(--size);
+}
+
+#app > * {
+    margin: var(--size) 0;
+}
+
+#app img, button {
+    display: block;
+    margin: var(--size) auto;
+}
+
+button {
+    padding: calc(var(--size) / 2) var(--size);
+    cursor: pointer;
+    font-weight: 600;
+    background: #e1e1e1;
+    color: #1e1e1e;
+    border: none;
+    border-radius: calc(var(--size) / 3);
+}
